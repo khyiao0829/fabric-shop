@@ -1,0 +1,19 @@
+# Tell GitHub Linguist how to detect languages properly
+
+# Ignore frontend build output
+frontend/build/* linguist-vendored
+
+# Tell GitHub this is a Java backend
+demo/**/*.java linguist-language=Java
+demo/**/*.properties linguist-language=Java
+demo/**/*.yml linguist-language=Java
+
+# React frontend
+frontend/**/*.js linguist-language=JavaScript
+frontend/**/*.jsx linguist-language=JavaScript
+frontend/**/*.css linguist-language=CSS
+frontend/**/*.html linguist-language=HTML
+
+# Ignore node_modules and Gradle caches
+frontend/node_modules/* linguist-vendored
+demo/.gradle/* linguist-vendored
